@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فروشگاه و گالری دیجیتال</title>
+    <title>گالری و فروشگاه آثار دیجیتال</title>
     
     <!-- کد اسکریپت ادسنس برای AMP -->
     <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
@@ -16,42 +16,90 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #f4f7f6;
-            color: #333;
-            text-align: center;
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
             padding: 40px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
-        h1 {
+        .section-title {
+            text-align: center;
+            margin: 30px 0 20px;
+            font-size: 1.6rem;
             color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 2.2rem;
         }
-        p {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .card p {
             color: #666;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 30px;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
         }
         .btn {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 10px 20px;
             background-color: #f39c12;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 6px;
             font-weight: bold;
             transition: background 0.3s ease;
         }
         .btn:hover {
             background-color: #d35400;
+        }
+        .about-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -62,9 +110,38 @@
     </amp-auto-ads>
 
     <div class="container">
-        <h1>به وبسایت من خوش آمدید</h1>
-        <p>این صفحه به زودی با جدیدترین آثار هنری، طرح‌های دیجیتال و محصولات فروشگاه به‌روزرسانی خواهد شد.</p>
-        <a href="#" class="btn">مشاهده محصولات</a>
+        <header>
+            <h1>گالری و فروشگاه هنر دیجیتال</h1>
+            <p>مجموعه‌ای از آثار هنری دیجیتال، بوم‌های نقاشی و طرح‌های اختصاصی</p>
+        </header>
+
+        <section class="about-section">
+            <h2 class="section-title">درباره گالری</h2>
+            <p>به گالری رسمی آثار دیجیتال خوش آمدید. در این مجموعه، تلاش شده تا با ترکیب خلاقیت، مفاهیم مدرن و ابزارهای دیجیتال، طرح‌های منحصربه‌فردی برای دکوراسیون، چاپ روی بوم و کلکسیون‌های دیجیتال خلق شود.</p>
+        </section>
+
+        <h2 class="section-title">مجموعه‌ها و محصولات</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>طرح‌های بوم و تابلو</h3>
+                <p>مجموعه نقاشی‌های دیجیتال با کیفیت بسیار بالا مناسب برای چاپ روی بوم و دکوراسیون داخلی.</p>
+                <a href="#" class="btn">مشاهده مجموعه</a>
+            </div>
+            <div class="card">
+                <h3>استیکر و طرح‌های گرافیکی</h3>
+                <p>مجموعه‌ای از استیکرها و کاراکترهای جذاب دیجیتالی برای برنامه‌ها و شبکه‌های اجتماعی.</p>
+                <a href="#" class="btn">مشاهده استیکرها</a>
+            </div>
+            <div class="card">
+                <h3>کلکسیون آثار دیجیتال (NFT)</h3>
+                <p>آثار هنری دیجیتال ثبت‌شده با شناسه اختصاصی و قابلیت معامله در پلتفرم‌های جهانی.</p>
+                <a href="#" class="btn">مشاهده کلکسیون</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© تمامی حقوق برای گالری هنر دیجیتال محفوظ است.</p>
+        </footer>
     </div>
 </body>
 </html>
